@@ -4,6 +4,7 @@ var Barcode = require('../lib/barcode').Barcode;
 var http = require('http');
 
 var port = 6789;
+
 console.log('Open url: http://localhost:' + port);
 
 http.createServer(function(req, res) {
