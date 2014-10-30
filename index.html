@@ -8,10 +8,18 @@
   <script src="lib/barcode.js"></script>
   <link rel="stylesheet" href="stylesheet/base.css"/>
   <link rel="stylesheet" href="stylesheet/javascript-barcode-sample.css"/>
+  <style>
+    #content {
+      width: 350px;
+    }
+  </style>
 </head>
 <body>
 <div id="content">
+  <h1>browser</h1>
   <img width="300" id="barcode"/>
+  <h1>server</h1>
+  <img width="300" src="http://localhost:6789" alt="node server 启动服务"/>
 </div>
 </body>
 <script src="javascript/javascript-barcode-sample.js"></script>

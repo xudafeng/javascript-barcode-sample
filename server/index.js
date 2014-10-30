@@ -1,15 +1,14 @@
 'use strict';
 
 var Barcode = require('../lib/barcode').Barcode;
-var ipv4 = require('ipv4');
 var http = require('http');
 
 var port = 6789;
-console.log('Open url: http://' + ipv4 + ':' + port);
+console.log('Open url: http://localhost:' + port);
 
 http.createServer(function(req, res) {
-  res.write('123123');
-  res.end();
-}).listen(port, ipv4);
-
-console.log(Barcode)
+  var data = Barcode('hello alibaba!');
+  var base64Data = data.replace(/^data:image\/\w+;base64,/, '');
+  var dataBuffer = new Buffer(base64Data, 'base64');
+  res.end(dataBuffer);
+}).listen(port, 'localhost');

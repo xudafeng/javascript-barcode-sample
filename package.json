@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "ipv4":"0.0.4"
+    "ipv4":"0.0.4",
+    "canvas": "~1.1.6"
   },
   "keywords": []
 }
