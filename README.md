@@ -1,2 +1,1 @@
-javascript-barcode-sample
-=========================
+# javascript-barcode-sample
